@@ -7,3 +7,39 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004274;
+  position: relative;
+  height: 70px;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+  font-family: "Playwrite CU", cursive;
+}
+nav > ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav > ul > li {
+  list-style-type: none;
+  font-family: "Kanit", sans-serif;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+.menu-icon {
+  color: white;
+  font-size: 30px;
+  display: none;
+}

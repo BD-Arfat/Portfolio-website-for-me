@@ -14,10 +14,46 @@
   </head>
   <body>
     <!-- header section -->
-    <header>amar name holo bangladesh</header>
+    <header>
+      <!-- nav section -->
+      <section>
+        <nav>
+          <div class="logo">
+            <h1>Ariful Islam Arfat</h1>
+          </div>
+          <ul id="menuList">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
+        </nav>
+      </section>
+    </header>
     <!-- main section -->
     <main></main>
     <!-- footer section -->
     <footer></footer>
+    <script>
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

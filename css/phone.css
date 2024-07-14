@@ -1,2 +1,25 @@
 @media screen and (max-width: 576px) {
+  nav > ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #004274;
+    gap: 0;
+    overflow: hidden;
+  }
+  nav > ul > li {
+    padding: 10px;
+  }
+  .logo {
+    font-size: 13px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    transition: all 0.5s;
+  }
 }
