@@ -22,4 +22,30 @@
   #menuList {
     transition: all 0.5s;
   }
+  /* banner section styles */
+  .banner-container {
+    width: 99%;
+    margin-top: 20px;
+  }
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+  .banner-content-item-one {
+    width: 98%;
+  }
+  .banner-content-item-one h1 {
+    font-size: 27px;
+    margin-top: 17px;
+  }
+  .banner-content-item-one p {
+    text-align: justify;
+  }
+  .banner-content-item-two img {
+    width: 97%;
+    border: 3px solid #004274;
+  }
+  .banner-content-item-one button {
+    margin-top: 23px;
+    width: 100%;
+  }
 }

@@ -43,3 +43,42 @@ nav > ul > li > a {
   font-size: 30px;
   display: none;
 }
+
+/* banner section styles */
+.banner-container {
+  width: 1100px;
+  margin: 50px auto;
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-content-item-one {
+  width: 50%;
+}
+.banner-content-item-one h1 {
+  font-family: "Playwrite CU", cursive;
+  font-size: 40px;
+}
+.banner-content-item-one p {
+  font-family: "Kanit", sans-serif;
+  margin-top: 8px;
+}
+.banner-content-item-one button {
+  background-color: #004274;
+  border: none;
+  padding: 10px 50px;
+  color: white;
+  font-family: "Playwrite CU", cursive;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+/* .banner-content-item-two {
+  width: 50%;
+} */
+.banner-content-item-two img {
+  width: 400px;
+  border: 9px solid #004274;
+  border-radius: 10px;
+}
