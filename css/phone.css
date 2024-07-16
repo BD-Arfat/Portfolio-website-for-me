@@ -29,6 +29,7 @@
   }
   .banner-content {
     flex-direction: column-reverse;
+    margin: 10px;
   }
   .banner-content-item-one {
     width: 98%;
@@ -63,6 +64,7 @@
   }
   .about-content {
     flex-direction: column;
+    margin: 10px;
   }
   .about {
     width: 100%;
