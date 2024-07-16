@@ -77,8 +77,16 @@ nav > ul > li > a {
 /* .banner-content-item-two {
   width: 50%;
 } */
+
+@keyframes borderBlink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .banner-content-item-two img {
   width: 400px;
-  border: 9px solid #004274;
-  border-radius: 10px;
+  border: 10px solid #004274;
+  animation: borderBlink 5s infinite;
+  border-radius: 6px;
 }
