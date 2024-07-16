@@ -33,19 +33,42 @@
   .banner-content-item-one {
     width: 98%;
   }
-  .banner-content-item-one h1 {
+  .banner-content-item-one h1,
+  .about-title {
     font-size: 27px;
     margin-top: 17px;
   }
-  .banner-content-item-one p {
+  .banner-content-item-one p,
+  .about-description {
     text-align: justify;
   }
-  .banner-content-item-two img {
+  .banner-content-item-two img,
+  .about-content-image img {
     width: 97%;
     border: 3px solid #004274;
   }
   .banner-content-item-one button {
     margin-top: 23px;
     width: 100%;
+  }
+  /* about section */
+  .about-container {
+    max-width: 100%;
+    margin-top: 70px;
+  }
+  .about-container-title {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 55px;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .about-skills {
+    text-align: justify;
   }
 }
