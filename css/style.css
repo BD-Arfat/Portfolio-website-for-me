@@ -88,10 +88,6 @@ nav > ul > li > a {
   animation: pulse 1s infinite;
 }
 
-/* .banner-content-item-two {
-  width: 50%;
-} */
-
 @keyframes borderBlink {
   50% {
     border-color: transparent;
@@ -196,4 +192,85 @@ hr {
 .logo-two {
   width: 38px;
   margin-left: 6px;
+}
+/* skills styles */
+.skills-container {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+.skills-header {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 45px;
+}
+
+.skill-content {
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: repeat(3, 2fr);
+}
+
+.skill {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 0;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.skill h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #004274, #004274);
+  border-radius: 15px;
+  animation: load 2s forwards;
+}
+
+/* Different progress values */
+.skill:nth-child(1) .progress-bar::after {
+  animation-delay: 0s;
+}
+.skill:nth-child(2) .progress-bar::after {
+  animation-delay: 0.5s;
+}
+.skill:nth-child(3) .progress-bar::after {
+  animation-delay: 1s;
+}
+.skill:nth-child(4) .progress-bar::after {
+  animation-delay: 1.5s;
+}
+.skill:nth-child(5) .progress-bar::after {
+  animation-delay: 2s;
+}
+
+/* Animation */
+@keyframes load {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress-width);
+  }
 }
