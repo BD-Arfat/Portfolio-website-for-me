@@ -105,10 +105,15 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
-    margin-top: 90px;
+    margin-top: 30px;
   }
-  .card {
+  .service-card {
     width: 90%;
+    margin: 10px auto;
+  }
+  .service-card:hover {
+    width: 90%;
+    margin: 10px auto;
   }
   /* education section styles */
   .education-section {
@@ -123,5 +128,18 @@
   }
   .level {
     margin-top: -30px;
+  }
+  /* projects section styles */
+  .container,
+  .service-card {
+    max-width: 100%;
+    margin: 40px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .card {
+    width: 90%;
+    margin: 20px auto;
   }
 }
