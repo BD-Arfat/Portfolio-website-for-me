@@ -61,7 +61,8 @@ nav > ul > li > a {
   font-family: "Kanit", sans-serif;
   margin-top: 8px;
 }
-.banner-content-item-one button {
+.banner-content-item-one button,
+.contact-button {
   background-color: #004274;
   border: none;
   padding: 10px 50px;
@@ -80,7 +81,8 @@ nav > ul > li > a {
     transform: scale(1.1);
   }
 }
-.banner-content-item-one button:hover {
+.banner-content-item-one button:hover,
+.contact-button:hover {
   animation: pulse 1s infinite;
 }
 
@@ -571,4 +573,102 @@ hr {
 
 .card-back a:hover {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* contact section styles */
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 80px auto;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 4px solid #004274;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 50%;
+  padding: 50px;
+  background-color: #ffff;
+}
+.contact-form h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+.form-group input {
+  border: 3px solid #004274;
+}
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  font-family: "Kanit", sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 2px solid #004274;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 14px;
+  font-family: "Kanit", sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #004274;
+}
+
+.contact-form button {
+  background-color: #004274;
+  border: none;
+  padding: 10px 50px;
+  color: white;
+  font-family: "Playwrite CU", cursive;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-image,
+  .contact-form {
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .contact-image img {
+    border-right: none;
+  }
 }
