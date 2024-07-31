@@ -130,6 +130,13 @@
     margin-top: -30px;
   }
   /* projects section styles */
+  #projects-menuList {
+    gap: 5px;
+  }
+  #projects-menuList li a {
+    padding: 5px;
+    font-size: 12px;
+  }
   .container,
   .service-card {
     max-width: 100%;
